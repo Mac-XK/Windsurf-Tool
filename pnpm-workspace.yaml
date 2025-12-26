@@ -1,0 +1,6 @@
+ignoredBuiltDependencies:
+  - electron
+  - esbuild
+  - puppeteer
+  - sleep
+  - vue-demi

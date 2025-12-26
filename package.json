@@ -1,0 +1,56 @@
+{
+  "name": "windsurf-tool-vue",
+  "version": "2.0.0",
+  "description": "Windsurf Go - Vue 3 + Electron 现代化账号管理工具",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "vite build && electron-builder",
+    "electron:build:mac": "vite build && electron-builder --mac",
+    "electron:build:win": "vite build && electron-builder --win"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.5",
+    "pinia": "^2.1.7",
+    "element-plus": "^2.4.4",
+    "@element-plus/icons-vue": "^2.3.1",
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
+    "puppeteer": "^21.11.0",
+    "puppeteer-real-browser": "^1.3.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10",
+    "electron": "^27.1.0",
+    "electron-builder": "^24.9.1",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["electron", "esbuild", "puppeteer"]
+  },
+  "build": {
+    "appId": "com.windsurf.tool.vue",
+    "productName": "Windsurf-Tool",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/**/*",
+      "!node_modules/.cache/**/*"
+    ],
+    "asar": false,
+    "mac": {
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    }
+  }
+}

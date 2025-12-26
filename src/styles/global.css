@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 浅色主题变量 */
+:root,
+[data-theme="light"] {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f9fafb;
+  --bg-hover: #f3f4f6;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-color: #e5e7eb;
+  --primary-color: #2563eb;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --sidebar-bg: #ffffff;
+  --card-bg: #ffffff;
+}
+
+/* 深色主题变量 */
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --bg-hover: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: #334155;
+  --primary-color: #3b82f6;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --sidebar-bg: #1e293b;
+  --card-bg: #1e293b;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Element Plus 深色模式覆盖 */
+[data-theme="dark"] .el-table {
+  --el-table-bg-color: var(--card-bg);
+  --el-table-tr-bg-color: var(--card-bg);
+  --el-table-header-bg-color: var(--bg-tertiary);
+  --el-table-row-hover-bg-color: var(--bg-hover);
+  --el-table-border-color: var(--border-color);
+  --el-table-text-color: var(--text-primary);
+  --el-table-header-text-color: var(--text-secondary);
+}
+
+[data-theme="dark"] .el-input__wrapper {
+  background-color: var(--bg-tertiary);
+  box-shadow: 0 0 0 1px var(--border-color) inset;
+}
+
+[data-theme="dark"] .el-input__inner {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .el-select__wrapper {
+  background-color: var(--bg-tertiary);
+  box-shadow: 0 0 0 1px var(--border-color) inset;
+}
+
+[data-theme="dark"] .el-dialog {
+  --el-dialog-bg-color: var(--bg-secondary);
+  --el-dialog-title-font-size: 16px;
+}
+
+[data-theme="dark"] .el-dialog__title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .el-form-item__label {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .el-button--default {
+  --el-button-bg-color: var(--bg-tertiary);
+  --el-button-border-color: var(--border-color);
+  --el-button-text-color: var(--text-primary);
+  --el-button-hover-bg-color: var(--bg-hover);
+}
+
+[data-theme="dark"] .el-input-number {
+  --el-input-bg-color: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .el-menu {
+  --el-menu-bg-color: transparent;
+  --el-menu-text-color: var(--text-secondary);
+  --el-menu-active-color: var(--primary-color);
+  --el-menu-hover-bg-color: var(--bg-hover);
+}
+
+[data-theme="dark"] .el-popper.is-light {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .el-select-dropdown__item {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .el-select-dropdown__item.hover {
+  background-color: var(--bg-hover);
+}
