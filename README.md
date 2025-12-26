@@ -13,10 +13,10 @@
 
 ---
 
-<img width="1200" height="750" alt="cc76fcd9edb632252d7420365cc56d65" src="https://github.com/user-attachments/assets/37169e42-aa27-44ad-8490-81077c4b0bc6" />
-<img width="1200" height="750" alt="347bcf7d696e1fe3508fbc21a28321bd" src="https://github.com/user-attachments/assets/0029c7d4-7864-431b-87fe-722f315bb1c5" />
-<img width="1200" height="750" alt="aaf64634315ca04f6abfb6e8eb3225ea" src="https://github.com/user-attachments/assets/9d271276-08ab-4b56-b444-57c58265cffd" />
-<img width="1200" height="750" alt="b2dac2f17205fbe4267d45604076f807" src="https://github.com/user-attachments/assets/c06ac01e-23a4-4941-97c8-ab67c3eb4900" />
+<img width="400" height="300" alt="cc76fcd9edb632252d7420365cc56d65" src="https://github.com/user-attachments/assets/37169e42-aa27-44ad-8490-81077c4b0bc6" />
+<img width="400" height="300" alt="347bcf7d696e1fe3508fbc21a28321bd" src="https://github.com/user-attachments/assets/0029c7d4-7864-431b-87fe-722f315bb1c5" />
+<img width="400" height="300" alt="aaf64634315ca04f6abfb6e8eb3225ea" src="https://github.com/user-attachments/assets/9d271276-08ab-4b56-b444-57c58265cffd" />
+<img width="400" height="300" alt="b2dac2f17205fbe4267d45604076f807" src="https://github.com/user-attachments/assets/c06ac01e-23a4-4941-97c8-ab67c3eb4900" />
 
 ## 📖 项目简介
 
